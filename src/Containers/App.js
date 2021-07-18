@@ -7,21 +7,8 @@ import ErrorBoundry from '../Components/ErrorBoundry';
 
 function App() {
 
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         robotto : [],
-    //         searchfield : ''
-    //     }
-    // }
     const [robots, setRobots] = useState([]);
     const [searchfield, setSearchfield] = useState('');
-
-    // componentDidMount () {
-    //     fetch('https://jsonplaceholder.typicode.com/users')
-    //     .then(response => response.json())
-    //     .then(users => {this.setState({robotto : users})});
-    // }
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
